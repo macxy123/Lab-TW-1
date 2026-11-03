@@ -2,7 +2,7 @@ import "/src/teacherFetch.js"; // protection against fetch() in infinite loops
 import { observable, configure } from "mobx";
 configure({ enforceActions: "never", });  // we don't use Mobx actions in the Lab
 import {model} from "/src/DinnerModel"
-export const reactiveModel=observable(dinnerModel);
+export const reactiveModel=observable(model);
 
 import {observer} from "mobx-react-lite";
 export const MyPresenter= observer(function MyPres(props){ })
